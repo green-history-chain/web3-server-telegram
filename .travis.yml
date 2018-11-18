@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- "6.9.5"
+sudo: false
+cache:
+  directories:
+    - node_modules
+
+before_install:
+- git config --global user.email "travis-ci@legalthings.net"
+- git config --global user.name "Travis CI"
+- git fetch origin 'refs/tags/*:refs/tags/*'
+install:
+- npm install
+
+before_script:
+- export DISPLAY=:99.0
+- export PATH=./node_modules/.bin/:$PATH
+- sh -e /etc/init.d/xvfb start
+script:
+- npm test
+- npm run build
