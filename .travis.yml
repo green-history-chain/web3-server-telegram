@@ -7,8 +7,8 @@ cache:
     - node_modules
 
 before_install:
-- git config --global user.email "travis-ci@legalthings.net"
-- git config --global user.name "Travis CI"
+- git config --global user.email "spread2009@gmail.com"
+- git config --global user.name "Paul"
 - git fetch origin 'refs/tags/*:refs/tags/*'
 install:
 - npm install

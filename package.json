@@ -1,10 +1,10 @@
 {
-  "name": "web3-server",
+  "name": "web3-server-telegram",
   "version": "0.1.0",
   "description": "Web3 server",
   "repository": {
     "type": "git",
-    "url": "https://github.com/legalthings/web3-server.git"
+    "url": "https://github.com/green-history-chain/web3-server-telegram.git"
   },
   "author": "Moesjarraf",
   "license": "MIT",
